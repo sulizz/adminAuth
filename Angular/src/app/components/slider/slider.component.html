@@ -1,0 +1,15 @@
+<div class ="container text-center">
+
+  <owl-carousel-o #owlElement [options]="customOptions">
+
+    <ng-container *ngFor="let slide of images">
+
+      <ng-template carouselSlide>
+        <a [href]="slide.href" target="_blank">
+          <img [src]="slide.src" />
+          </a>
+      </ng-template>
+
+    </ng-container>
+  </owl-carousel-o>
+</div>
